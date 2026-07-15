@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="dota2bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="50%" style="stop-color:#16213E"/>
+      <stop offset="100%" style="stop-color:#0F0F23"/>
+    </linearGradient>
+    <linearGradient id="dota2accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000"/>
+      <stop offset="100%" style="stop-color:#5C0000"/>
+    </linearGradient>
+    <radialGradient id="sparkle1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF4444;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#FF4444;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="sparkle2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="dtglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="bannerClip"><rect width="900" height="300" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#bannerClip)">
+    <rect width="900" height="300" fill="url(#dota2bg)"/>
+    <!-- Diagonal accent stripe -->
+    <polygon points="0,0 350,0 250,300 0,300" fill="url(#dota2accent)" opacity="0.3"/>
+    <!-- Hero silhouettes -->
+    <g opacity="0.08" fill="#FF4444">
+      <path d="M60,280 L90,180 L100,200 L120,160 L140,200 L150,180 L180,280 Z"/>
+      <path d="M200,280 L220,200 L230,220 L250,170 L260,190 L270,200 L280,180 L310,280 Z"/>
+      <path d="M700,280 L720,190 L740,210 L750,170 L770,210 L790,195 L810,280 Z"/>
+    </g>
+    <!-- Grid pattern -->
+    <g stroke="#8B0000" stroke-width="0.3" opacity="0.1">
+      <line x1="0" y1="75" x2="900" y2="75"/><line x1="0" y1="150" x2="900" y2="150"/>
+      <line x1="0" y1="225" x2="900" y2="225"/>
+      <line x1="225" y1="0" x2="225" y2="300"/><line x1="450" y1="0" x2="450" y2="300"/>
+      <line x1="675" y1="0" x2="675" y2="300"/>
+    </g>
+    <!-- Sparkle effects -->
+    <circle cx="380" cy="80" r="40" fill="url(#sparkle1)"/>
+    <circle cx="550" cy="200" r="30" fill="url(#sparkle2)"/>
+    <circle cx="750" cy="100" r="25" fill="url(#sparkle1)"/>
+    <circle cx="200" cy="130" r="20" fill="url(#sparkle2)"/>
+    <!-- Small diamond sparkles -->
+    <g fill="#FFD700" opacity="0.7">
+      <polygon points="420,60 423,66 420,72 417,66" transform="rotate(15,420,66)"/>
+      <polygon points="600,120 603,126 600,132 597,126"/>
+      <polygon points="320,200 323,206 320,212 317,206" transform="rotate(-10,320,206)"/>
+      <polygon points="780,180 783,186 780,192 777,186"/>
+    </g>
+    <!-- Dota 2 style angular frame -->
+    <path d="M340,25 L560,25 L570,35 L330,35 Z" fill="#8B0000" opacity="0.6"/>
+    <path d="M340,275 L560,275 L570,265 L330,265 Z" fill="#8B0000" opacity="0.6"/>
+    <!-- Title -->
+    <text x="450" y="110" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="800" fill="#FFFFFF" text-anchor="middle" filter="url(#dtglow)">DOTA2</text>
+    <text x="450" y="155" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="700" fill="#FF4444" text-anchor="middle" letter-spacing="6">SKIN CHANGER</text>
+    <!-- Feature pills -->
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600">
+      <rect x="220" y="185" width="90" height="24" rx="12" fill="#8B0000" opacity="0.8"/>
+      <text x="265" y="201" fill="#FFF" text-anchor="middle">ARCANAS</text>
+      <rect x="325" y="185" width="90" height="24" rx="12" fill="#8B0000" opacity="0.8"/>
+      <text x="370" y="201" fill="#FFF" text-anchor="middle">IMMORTALS</text>
+      <rect x="430" y="185" width="110" height="24" rx="12" fill="#8B0000" opacity="0.8"/>
+      <text x="485" y="201" fill="#FFF" text-anchor="middle">CACHE SETS</text>
+      <rect x="555" y="185" width="120" height="24" rx="12" fill="#8B0000" opacity="0.8"/>
+      <text x="615" y="201" fill="#FFF" text-anchor="middle">124+ HEROES</text>
+    </g>
+    <!-- Version badge -->
+    <rect x="390" y="230" width="120" height="26" rx="13" fill="none" stroke="#8B0000" stroke-width="1.5" opacity="0.7"/>
+    <text x="450" y="248" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#CC3333" text-anchor="middle">v3.2 � Source 2</text>
+    <!-- Bottom decorative line -->
+    <line x1="150" y1="285" x2="750" y2="285" stroke="#8B0000" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>
